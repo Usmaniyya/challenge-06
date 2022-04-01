@@ -5,74 +5,87 @@
     padding: 0;
 }
 body {
-    font-size: 21px;
-    min-height: 100vh;
+    font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    color: #222C2A;
 }
-h2 {
-    margin-bottom: .75em;
-}
-p {
-    line-height: 1.5;
-}
-.bg-primary {
-    background-color: #222C2A;
-}
-.bg-secondary {
-    background-color: #824936;
-}
-.section-title {
-    color: black;
-}
-header {
-    min-height: 600px;
-    background-color: #F3EED9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-header h1 {
-    color: #824936;
-    font-size: 60px;
+h1, h2 {
     font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
-header p {
-    color: black;
-    font-size: 18px;
-    font-weight: 300;
+section {
+    padding: 3em 0;
+}
+.intro {
+    background-color: #F3EED9;
+    padding: 200px 0;
+    text-align: center;
+    color: #824936; 
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+}
+.intro-text {
     text-transform: uppercase;
-    word-spacing: 10px;
-    
+    font-size: 1.125rem;
+    letter-spacing: 10px;
+    color: #222C2A;
+    margin-bottom: .25rem;
+}
+.title {
+    font-size: 60px;
 }
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1128px;
     margin: 0 auto;
+}
+.section-title {
+    font-size: 2.2rem;
+    color: #F3EED9;
+}
+.dark {
+    color: #824936;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.section-two p{
+    margin-bottom: 2rem;
+}
+.section-three {
+    background-color: #222C2A;
+    color: #fff;
+}
+.section-four {
+    background-color: #824936;
+    color: #fff;
 }
 .row {
     display: flex;
     justify-content: space-between;
 }
-.content {
-    padding: 4em 0;
+.col {
+    width: 100%;
 }
-.content .title {
-    text-align: center;
-    margin-bottom: 1.3em;
-    color: #824936;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
+.col + .col {
+    margin-left: 5em;
 }
-.section {
-    width: 50%;
-}
-.section h2 {
-    color: #F3EED9;
-    margin-top: .3em;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
+img {
+    max-width: 100%;
 }
 
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col + .col {
+        margin-left: 0;
+    }
+    .title {
+        font-size: 3.3rem;
+    }
+}
